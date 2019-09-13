@@ -13,6 +13,9 @@ h2{
 .nav_lat_2 h3{
     margin: auto;
     width: 100%;
+    margin-left: 5px;
+    border-bottom: #000000 2px Solid;
+    border-bottom-width: 80%;
 }
 #red_part{
     width: 86vw;
@@ -28,6 +31,7 @@ h2{
     color: #ffffff;
     font-size: 1.5vw;
     display: none;
+    z-index: 7;
 }
 #grey_part{
     width: 14vw;
@@ -90,30 +94,40 @@ h2{
     transform: translateY(0px) rotateZ(60deg);
 }
 li{
-    padding: 50px;
+    padding-top: 50px;
     list-style: none;
 }
-/*
-#red_part .hide{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 86vw;
-    height: 100VH;
-    background-color: #f80606 !important;
-    background-image: none;
+
+@media
+screen and (max-width: 1024px),
+screen and (max-device-width: 1024px){
+    #red_part, #red_part2{
+        width: 70vw;
+    }
+    #grey_part, #grey_white{
+        width: 30vw;
+    }
+    #red_part2  li ul{
+        font-size: 40px;
+    }
+    #red_part2 h2{
+        font-size: 60px;
+    }
+    #grey_white li ul{
+        font-size: 40px;
+    }
+    #grey_white h3{
+        font-size: 50px;
+    }
+}/*
+@media 
+screen and (max-width: 500px),
+screen and (max-device-width: 500px){
+
 }
-#grey_part .hide{
-    width: 14vw;
-    height: 100vh;
-    background-color: #f5fafa;
-}
-#burger .hide{
-    height: 30px;
-    width: 30px;
-    position: relative;
-    margin-left: 5vw;
-    margin-top: 5vh;
-    cursor: pointer;
+
+@media
+screen and (max-width: 300px),
+screen and (max-device-width: 300px){
+
 }*/
