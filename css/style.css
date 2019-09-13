@@ -1,0 +1,119 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+h2{
+    padding: 50px;
+}
+.nav_lat_2 h3{
+    margin: auto;
+    width: 100%;
+}
+#red_part{
+    width: 86vw;
+    height: 100vh;
+    background-color: #fcfafa;
+    background-image: url(../img/simplon_polygone.png);
+    background-size: cover;
+}
+#red_part2{
+    width: 86vw;
+    height: 100vh;
+    background-color: #f80909;
+    color: #ffffff;
+    font-size: 1.5vw;
+    display: none;
+}
+#grey_part{
+    width: 14vw;
+    height: 100vh;
+    background-color: #232b2b;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+#grey_white{
+    width: 14vw;
+    display: none;
+    color: #000000;
+}
+#burger, #burger2{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+#burger span{
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+#burger2 span{
+        height: 5px;
+        width: 100%;
+        background-color: #ff0000;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: translateY(0px) rotateZ(60deg);
+}
+#burger span::before{
+    content: "";
+    height: 3px;
+    width: 80%;
+    background-color: #ffffff;
+    position: absolute;
+    top: -10px;
+    left: 20%;
+}
+#burger:hover span::before{
+    transform: translateY(0px) translateY(10px);
+    transition-duration: 500ms;
+}
+#burger2 span::before{
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #ff0000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0px) rotateZ(60deg);
+}
+li{
+    padding: 50px;
+    list-style: none;
+}
+/*
+#red_part .hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 86vw;
+    height: 100VH;
+    background-color: #f80606 !important;
+    background-image: none;
+}
+#grey_part .hide{
+    width: 14vw;
+    height: 100vh;
+    background-color: #f5fafa;
+}
+#burger .hide{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    cursor: pointer;
+}*/
