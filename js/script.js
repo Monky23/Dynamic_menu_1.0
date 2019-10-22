@@ -83,31 +83,31 @@ burger.addEventListener("keypress", function () {
     grey.animate([
         { transform: "translateX(0)" },
         { transform: "translateX(100%)" }
-    ], { duration: 500 });
+    ], { duration: 1000 });
     red.animate([
         { transform: "translateX(0)" },
         { transform: "translateX(150%)" }
-    ], { duration: 500 });
+    ], { duration: 2000 });
     setTimeout(function () {
         red.style.display = "none";
         grey.style.display = "none";
         reed.style.display = "block";
         white.style.display = "block";
-    }, 600);
+    }, 1500);
 })
 burgeer.addEventListener("keypress", function () {
     white.animate([
         { transform: "translateX(100%)" },
         { transform: "translateX(0%)" }
-    ], { duration: 500 });
+    ], { duration: 1000 });
     reed.animate([
         { transform: "translateX(150%)" },
         { transform: "translateX(0%)" }
-    ], { duration: 500 });
+    ], { duration: 1500 });
     setTimeout(function () {
         red.style.display = "block";
         grey.style.display = "block";
         reed.style.display = "none";
         white.style.display = "none";
-    }, 600);
+    }, 900);
 })
